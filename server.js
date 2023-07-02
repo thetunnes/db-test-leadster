@@ -1,9 +1,12 @@
 import { create, router as _router, defaults } from 'json-server';
 import clone from 'clone';
 import data from './db.json';
+import cors from 'cors'
 
 const isProductionEnv = process.env.NODE_ENV === 'production';
 const server = create()
+
+server.use(cors())
 
 // For mocking the POST request, POST request won't make any changes to the DB in production environment
 const router = _router(isProductionEnv ? clone(data) : 'db.json', {
