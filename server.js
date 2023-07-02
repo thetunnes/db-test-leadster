@@ -7,7 +7,7 @@ const isProductionEnv = process.env.NODE_ENV === 'production';
 const server = create()
 
 server.use(cors({
-    origin: ["https://technical-test-leadster.vercel.app", "https://db-test-leadster.vercel.app/"]
+    origin: ["https://technical-test-leadster.vercel.app", "https://db-test-leadster.vercel.app"]
 }))
 
 // For mocking the POST request, POST request won't make any changes to the DB in production environment
