@@ -1,0 +1,16 @@
+{
+  "name": "db-test-leadster",
+  "version": "1.0.0",
+  "description": "JSON Server DB to technical test",
+  "main": "server.js",
+  "author": "The Tunnes",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development node server.js",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "clone": "^2.1.2",
+    "json-server": "^0.17.3"
+  }
+}
